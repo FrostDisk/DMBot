@@ -1,0 +1,10 @@
+const logger = require('../../components/logger');
+
+module.exports = {
+    name: 'ping',
+    description: 'Ping!',
+    execute(msg, args) {
+        msg.reply('pong');
+        // msg.channel.send('pong');
+    },
+};

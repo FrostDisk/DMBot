@@ -1,3 +1,6 @@
 {
-    "prefix": "dm!"
+    "discord": {
+        "commandprefix": "dm!"
+    }
+
 }

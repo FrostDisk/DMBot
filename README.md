@@ -1,2 +1,7 @@
-# DMBot
-DM Bot
+# FrostDisk DMBot
+
+## Installation
+
+```
+npm install
+```
