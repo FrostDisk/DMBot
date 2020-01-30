@@ -30,11 +30,15 @@ bot.on('message', message => {
 
     logger.silly('message()');
 
+    logger.debug(`Message received: ${message.content}`);
+
     const parsed = parser.parse(message, config.commandprefix);
 
     let command = parsed.command;
 
     if (!parsed.success) return;
+
+    logger.debug(`Command parsed: ${parsed.command}`, { parsed });
 
     if (!bot.commands.has(command)) return message.reply('Invalid command');
 

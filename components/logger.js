@@ -5,7 +5,6 @@ require('../config');
 
 const logger = winston.createLogger({
     level: process.env.VERBOSITY,
-    format: winston.format.json(),
     transports: [
         //
         // - Write to all logs with level `info` and below to `combined.log` 
