@@ -38,7 +38,7 @@ bot.on('message', message => {
 
     if (!parsed.success) return;
 
-    logger.debug(`Command parsed: ${parsed.command}`, { parsed });
+    logger.debug(`Command parsed: ${parsed.command}`);
 
     if (!bot.commands.has(command)) return message.reply('Invalid command');
 
