@@ -8,6 +8,8 @@ module.exports = {
     description: 'Pokemon Information',
     async execute(message, args) {
 
+        logger.debug(`!pokemon ${args[0]}`);
+
         let article = await wikidex.getPokemonData(args[0]);
 
         if (!article) {
@@ -20,6 +22,11 @@ module.exports = {
             .setTitle(article.name)
             .setURL(article.urlArticle)
             .setDescription(article.description)
+            .addFields(
+                { name: 'Generación', value: article.generation },
+                { name: 'Tipo', value: article.type1, inline: true },
+                { name: 'Especie', value: article.species, inline: true }
+            )
             .setThumbnail(article.urlThumbnail)
             .setTimestamp()
 
