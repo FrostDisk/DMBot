@@ -8,7 +8,7 @@ const config = require('../config/bot.json').discord;
 const bot = new Discord.Client();
 bot.commands = new Discord.Collection();
 
-bot.login(process.env.TOKEN)
+bot.login(process.env.DISCORDBOT_TOKEN)
     .then(() => {
         logger.silly('login()');
         logger.info('Login successful')

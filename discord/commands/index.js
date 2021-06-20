@@ -1,4 +1,5 @@
 module.exports = {
     ping: require('./ping'),
-    pokemon: require('./pokemon')
+    pokemon: require('./pokemon'),
+    tmdb: require('./tmdb')
 };
