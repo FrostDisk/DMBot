@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/FrostDisk/DMBot#readme",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "discord-command-parser": "^1.5.3",
     "discord.js": "^12.5.3",
     "i": "^0.3.7",
